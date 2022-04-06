@@ -15,20 +15,23 @@ formatting
 
 // nested components, react tools
 
-function Greeting() {
+function BookList() {
 
   return(
-    <div>
-      <Person />
-      <Msg />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-const Person = () => <h2>Bita Bean</h2>;
-const Msg = () => {
-  return  <p>this is my page</p>;
+const Book = () => {
+  return <article>
+    this is a book
+  </article>
 };
 
-
-ReactDom.render(<Greeting/>, document.getElementById('root'));
+ReactDom.render(<BookList/>, document.getElementById('root'));
