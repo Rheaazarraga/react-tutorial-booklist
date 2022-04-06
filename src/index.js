@@ -13,20 +13,22 @@ close every element
 formatting
 */
 
+// nested components, react tools
 
 function Greeting() {
 
   return(
     <div>
-      <h3>hello, everyone</h3>
-      <ul>
-        <li>
-          <a href='#'>hello, world</a>
-        </li>
-      </ul>
+      <Person />
+      <Msg />
     </div>
   );
 }
+
+const Person = () => <h2>Bita Bean</h2>;
+const Msg = () => {
+  return  <p>this is my page</p>;
+};
 
 
 ReactDom.render(<Greeting/>, document.getElementById('root'));
