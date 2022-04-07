@@ -12,9 +12,10 @@ body {
 
 
 .booklist {
+  justify-content: center;
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 0 auto;
   display: grid;
   gap: 2rem;
 
