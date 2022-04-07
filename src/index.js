@@ -20,6 +20,25 @@ const thirdBook = {
   author: 'Andrew Rea',
   title: 'Binging With Babish: 100 Recipes Recreated from Your Favorite Movies and TV Shows' 
 }
+
+const fourthBook = {
+  img: 'https://images-na.ssl-images-amazon.com/images/I/51eU8l7A9oL._SX400_BO1,204,203,200_.jpg',
+  author: 'Matty Matheson',
+  title: 'Home Style Cookery: A Home Cookbook' 
+}
+
+const fifthBook = {
+  img: 'https://images-na.ssl-images-amazon.com/images/I/51jEmzNkNVL._SX398_BO1,204,203,200_.jpg',
+  author: 'Samin Nosrat',
+  title: ' Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking' 
+}
+
+const sixthBook = {
+  img: 'https://images-na.ssl-images-amazon.com/images/I/51fFkBSa5UL._SX402_BO1,204,203,200_.jpg',
+  author: 'Stanley Tucci',
+  title: ' The Tucci Table: Cooking With Family and Friends' 
+}
+
 function BookList() {
 
   return (
@@ -33,6 +52,15 @@ function BookList() {
       <Book img={thirdBook.img}
       title={thirdBook.title}
       author={thirdBook.author}/>
+      <Book img={fourthBook.img}
+      title={fourthBook.title}
+      author={fourthBook.author}/>
+      <Book img={fifthBook.img}
+      title={fifthBook.title}
+      author={fifthBook.author}/>
+      <Book img={sixthBook.img}
+      title={sixthBook.title}
+      author={sixthBook.author}/>
 
     </section>
   );
