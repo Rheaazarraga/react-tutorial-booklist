@@ -45,13 +45,16 @@ function BookList() {
     <section className='booklist'>
       <Book img={firstBook.img}
       title={firstBook.title}
-      author={firstBook.author}/>
+      author={firstBook.author}
+      />
       <Book img={secondBook.img}
       title={secondBook.title}
-      author={secondBook.author}/>
+      author={secondBook.author}
+      />
       <Book img={thirdBook.img}
       title={thirdBook.title}
-      author={thirdBook.author}/>
+      author={thirdBook.author}
+      />
       <Book img={fourthBook.img}
       title={fourthBook.title}
       author={fourthBook.author}/>
@@ -68,15 +71,15 @@ function BookList() {
 
 
 
-
+// another way to pass props:
 const Book = (props) => {
-
+  const { img, title, author } = props;
 
   return (
     <article className='book'>
-      <img src={props.img} alt='' />
-      <h1>{props.title}</h1>
-      <h4>{props.author}</h4>
+      <img src={img} alt='' />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
     </article>
   );
 };
