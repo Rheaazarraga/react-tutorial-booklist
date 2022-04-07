@@ -20,19 +20,18 @@ function BookList() {
 const Book = () => {
   return (
   <article className='book'>
-    <Image/>
-    <Title />
-    <Author />
+    <img src='https://images-na.ssl-images-amazon.com/images/I/51xiuHJv5DL._SX398_BO1,204,203,200_.jpg' alt='' />
+    <h1>Half Baked Harvest</h1>
+    <h4>Tieghan Gerard</h4>
   </article>
   );
 };
 
-const Image = () => (<img src='https://images-na.ssl-images-amazon.com/images/I/51xiuHJv5DL._SX398_BO1,204,203,200_.jpg' alt='' />
-);
+//const Image = () => ();
 
-const Title = () => <h1>Half Baked Harvest</h1>;
+// const Title = () => ;
 
-const Author = () => <h4 style={{color : '#617d98', fontSize: '0.75rem', marginTop: '0.25rem'}}>Tieghan Gerard</h4>;
+//const Author = () => ;
 
 
 ReactDom.render(<BookList/>, document.getElementById('root'));
