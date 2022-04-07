@@ -5,7 +5,7 @@ import './index.css';
 
 function BookList() {
 
-  return(
+  return (
     <section className='booklist'>
       <Book />
       <Book />
@@ -18,12 +18,16 @@ function BookList() {
 }
 
 const Book = () => {
+
+  const title = 'Half Baked Harvest';
+  const author = 'Tieghan Gerard';
+
   return (
-  <article className='book'>
-    <img src='https://images-na.ssl-images-amazon.com/images/I/51xiuHJv5DL._SX398_BO1,204,203,200_.jpg' alt='' />
-    <h1>Half Baked Harvest</h1>
-    <h4>Tieghan Gerard</h4>
-  </article>
+    <article className='book'>
+      <img src='https://images-na.ssl-images-amazon.com/images/I/51xiuHJv5DL._SX398_BO1,204,203,200_.jpg' alt='' />
+      <h1>{title}</h1>
+      <h4>{author.toUpperCase()}</h4>
+    </article>
   );
 };
 
@@ -34,4 +38,4 @@ const Book = () => {
 //const Author = () => ;
 
 
-ReactDom.render(<BookList/>, document.getElementById('root'));
+ReactDom.render(<BookList />, document.getElementById('root'));
