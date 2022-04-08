@@ -8,7 +8,7 @@ const Book = ({img, title, author}) => {
   
   //reference function:
   const clickHandler = (e) => {
-    alert('You chose this book');
+    alert('Nice choice, you can find a preview on amazon\'s website');
   }
 
   const authorInfo = (author) => {
@@ -23,7 +23,7 @@ const Book = ({img, title, author}) => {
       <img src={img} alt='' />
       <h1 onClick={()=> console.log(title)}>{title}</h1>
       <h4>{author}</h4>
-      <button type='button' className='look-inside' onClick={clickHandler}>Look inside</button><br/>
+      <button type='button' className='look-inside' onClick={clickHandler} >Look inside</button><br/>
       <button type='button' className='author' onClick={() => authorInfo(author)}>More by this author</button>
     </article>
   );
