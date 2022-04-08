@@ -23,8 +23,8 @@ const Book = ({img, title, author}) => {
       <img src={img} alt='' />
       <h1 onClick={()=> console.log(title)}>{title}</h1>
       <h4>{author}</h4>
-      <button type='button' onClick={clickHandler}>Look inside</button>
-      <button type='button' onClick={() => authorInfo(author)}>More by this author</button>
+      <button type='button' className='look-inside' onClick={clickHandler}>Look inside</button><br/>
+      <button type='button' className='author' onClick={() => authorInfo(author)}>More by this author</button>
     </article>
   );
 };
