@@ -61,10 +61,9 @@ function BookList() {
 }
 
 
-
-// another way to pass props - destructured
-const Book = (props) => {
-  const { img, title, author } = props;
+// passing detructured props
+const Book = ({img, title, author}) => {
+  
   return (
     <article className='book'>
       <img src={img} alt='' />
