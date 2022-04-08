@@ -52,7 +52,7 @@ function BookList() {
       {books.map((book)=> {
         return (
          <Book key={book.id} 
-         book={book}></Book>
+         {...book}></Book>
         );
       })}
 
@@ -64,8 +64,7 @@ function BookList() {
 
 // another way to pass props - destructured
 const Book = (props) => {
-  // destructuring the book property, not props
-  const { img, title, author } = props.book;
+  const { img, title, author } = props;
   return (
     <article className='book'>
       <img src={img} alt='' />
