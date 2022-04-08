@@ -68,7 +68,7 @@ const Book = ({img, title, author}) => {
   // onClick, onMouseOver
   
   //reference function:
-  const clickHandler = () => {
+  const clickHandler = (e) => {
     alert('You chose this book');
   }
 
@@ -77,7 +77,9 @@ const Book = ({img, title, author}) => {
   };
 
   return (
-    <article className='book'>
+    <article className='book' onMouseOver={() => {
+      console.log(title);
+    }}>
       <img src={img} alt='' />
       <h1 onClick={()=> console.log(title)}>{title}</h1>
       <h4>{author}</h4>
