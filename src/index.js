@@ -41,9 +41,9 @@ function BookList() {
 
   return (
     <section className='booklist'>
+      {/* implement map method so we don't have to manually input img, title author.
+      book param always points back to an item/single obj in the array */}
       {books.map((book)=> {
-        const {img, title, author} = book;
-        console.log(book);
         return (
          <Book book={book}></Book>
         );
@@ -57,9 +57,8 @@ function BookList() {
 
 // another way to pass props - destructured
 const Book = (props) => {
-  console.log(props);
+  // destructuring the book property, not props
   const { img, title, author } = props.book;
-
   return (
     <article className='book'>
       <img src={img} alt='' />
