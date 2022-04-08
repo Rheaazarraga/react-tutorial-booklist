@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
 
-
 const books = [
   {
     id: 1,
@@ -42,7 +41,6 @@ const books = [
   }
 ];
 
-
 function BookList() {
 
   return (
@@ -59,7 +57,6 @@ function BookList() {
     </section>
   );
 }
-
 
 // passing destructured props
 const Book = ({img, title, author}) => {
@@ -88,6 +85,5 @@ const Book = ({img, title, author}) => {
     </article>
   );
 };
-
 
 ReactDom.render(<BookList />, document.getElementById('root'));
