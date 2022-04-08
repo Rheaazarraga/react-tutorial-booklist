@@ -34,6 +34,7 @@ const Book = ({img, title, author}) => {
   }
 
   const authorInfo = (author) => {
+    alert('Please google for the author for other titles by them')
     console.log(author);
   };
 
